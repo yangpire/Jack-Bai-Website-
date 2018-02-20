@@ -1,0 +1,64 @@
+body {
+  background-color: #9fcce2;
+  font-family: 'Encode Sans', sans-serif;
+  padding: 50px;
+}
+
+#list li{
+  display: inline;
+  margin: 10px;
+  text-align: center;
+}
+
+#list a{
+  text-decoration: none;
+  color: white;
+}
+
+#list {
+  background-color: inherit;
+  width: 300px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+p{
+  color: #ededed;
+  font-family: 'Encode Sans', sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+  max-width:none;
+  margin: auto;
+  text-align: match-parent;
+  padding: 20px 50px 77px;
+
+}
+
+.logo {
+  width: 6%;
+  height: 6%;
+  display: block;
+}
+
+.imageofme {
+  width:65%;
+  height: 65%;
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+}
