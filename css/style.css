@@ -1,5 +1,5 @@
 body {
-  background-color: #d6d6d6;
+  background-color: ##fafafa;
   font-family: 'Encode Sans', sans-serif;
   padding: 100px;
 }
@@ -13,37 +13,45 @@ head {
 
 h3 {
    float:inherit;
-   font-size: 1em;
+   font-size: 18px;
    color: black;
    font-style: normal;
    font-weight: bold;
 
 }
 
-
-#list li{
-  display: inline;
-  margin: 10px;
-  text-align: center;
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #000;
+    overflow: hidden;
 }
 
-#list a{
-  text-decoration: none;
-  color: black;
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
 }
 
-#list {
-  background-color: inherit;
-  width: 300px;
-  height: 25px;
-  border-radius: 5px;
-  font-weight: 300;
-  font-size: 1em;
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
 }
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #5f4848;
+    color: white;
+}
+
 
 p{
   color: black;
-  font-size: 1em;
+  font-size: 18px;
   font-weight: lighter;
   max-width:none;
   margin: auto;
@@ -62,14 +70,14 @@ p{
 h1 {
   color: black;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 20px;
   font-weight: bold;
 }
 
 h2 {
   color: black;
   text-align: center;
-  font-size: 1em;
+  font-size: 16px;
   font-weight: normal;
   font-style: italic;
 }
