@@ -60,6 +60,49 @@ p{
 
 }
 
+p1{
+  color: black;
+  font-size: 18px;
+  font-weight: lighter;
+  max-width:none;
+  margin: auto;
+  text-align: match-parent;
+  padding: 20px 50px 77px;
+
+}
+
+p2{
+  color: black;
+  font-size: 18px;
+  font-weight: lighter;
+  max-width:none;
+  margin: auto;
+  text-align: match-parent;
+  padding: 20px 50px 77px;
+
+}
+
+p3{
+  color: black;
+  font-size: 18px;
+  font-weight: lighter;
+  max-width:none;
+  margin: auto;
+  text-align: match-parent;
+  padding: 20px 50px 77px;
+
+}
+
+p4{
+  color: black;
+  font-size: 18px;
+  font-weight: lighter;
+  max-width:none;
+  margin: auto;
+  text-align: match-parent;
+  padding: 20px 50px 77px;
+
+}
 
 
 
