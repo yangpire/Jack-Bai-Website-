@@ -10,7 +10,7 @@ var delay;
 // ***** Preload function ***** /
 
 function preload(){
-  yearVsFar = loadTable('../data/yearVsFar.csv', 'csv', 'header');
+  yearVsFar = loadTable('data/yearVsFar.csv', 'csv', 'header');
   console.log('Done loading table...');
 }
 
@@ -87,6 +87,6 @@ function draw(){
        ellipse(numFacilFar, YearOfData,6 ,6);
 
 
-}
+         }
        }
    }
