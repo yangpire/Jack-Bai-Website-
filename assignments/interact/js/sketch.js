@@ -10,7 +10,7 @@ var delay;
 // ***** Preload function ***** /
 
 function preload(){
-  yearVsFar = loadTable('../data/yearVsFar.csv', 'csv', 'header');
+  yearVsFar = loadTable('data/yearVsFar.csv', 'csv', 'header');
   console.log('Done loading table...');
 }
 
@@ -73,20 +73,37 @@ function draw(){
        var numFacilFar = FacilFarPosition
        // map each yearbuilt between bottomY and topY
        var YearOfData = map(YearOfData, 1900, 2014, bottomY, topY);
-       fill('#1C4C56');
+
+       fill('#949494');
        noStroke();
-       if (mouseX === numBuiltFar) {
-         fill('red');
+       push();
+       if (mouseX === numBuiltFar){
+         fill('#1C4C56');
        }
+
        ellipse(numBuiltFar, YearOfData, 5, 5);
-       fill('#CFB276');
+
+       fill('#949494');
+       if (mouseX === numResidFar){
+         fill('#CFB276');
+       }
        ellipse(numResidFar, YearOfData, 6, 6);
 
-       fill('#6B0803')
+       fill('#949494');
+       if (mouseX === numCommFar){
+         fill('#6B0803');
+       }
+
        ellipse(numCommFar, YearOfData,6 ,6);
 
-       fill('#B95F21')
+       fill('#949494');
+       if (mouseX === numFacilFar){
+         fill('#B95F21');
+       }
+
        ellipse(numFacilFar, YearOfData,6 ,6);
+
+
 
 
          }
