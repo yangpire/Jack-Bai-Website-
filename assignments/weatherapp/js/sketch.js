@@ -41,9 +41,9 @@ function getWeatherData(apiData){
 
 // **** Draw Function **** //
 function draw(){
-  var drawTemp = math.draw((temperature * (9/5)) - 459.67);
-  var drawTempMax = math.draw((tempMax * (9/5)) - 459.67);
-  var drawTemMin = math.draw((tempMin * (9/5)) - 459.67);
+  var drawTemp = round(temperature * (9/5) - 459.67);
+  var drawTempMax = round(tempMax * (9/5) - 459.67);
+  var drawTemMin = round(tempMin * (9/5) - 459.67);
   var drawwind = wind;
 
 background (255);
@@ -51,18 +51,57 @@ background (255);
   if (drawTemp < 100){
     background (255);
 
-  fill('#FFAD70')
-  nostroke();
-  ellipse(100,100, temp, temp);
+  fill('#833B00')
+  noStroke();
+  rect(300, 90, 200, 200);
 
   }
+
+  if (drawTemp < 70){
+    background (255);
+
+  fill('#FF9450')
+  noStroke();
+  rect(300, 90, 200, 200);
+
+  }
+
+  if (drawTemp < 50){
+    background (255);
+
+  fill('#CF9976')
+  noStroke();
+  rect(300, 90, 200, 200);
+
+  }
+
+  if (drawTemp < 32){
+    background (255);
+
+  fill('#6BC8CF')
+  noStroke();
+  ellipse( 400, 170, 200, 200);
+
+  }
+
+  if (drawTemp < 0){
+    background (255);
+
+  fill('#157F83')
+  noStroke();
+  ellipse( 400, 170, 200, 200);
+
+  }
+
+
 
 
   if (weatherData){
   fill(0);
 	textAlign(CENTER);
 	textSize(18);
-  textfont('Encode Sans');
+  textFont('Encode Sans');
+
 
   text(cityInput.value(), 400, 40);
 	textSize(18);

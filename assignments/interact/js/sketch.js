@@ -23,13 +23,15 @@ function setup(){
   print(yearVsFar.getRowCount() + ' rows loaded...');
   print(yearVsFar.getColumnCount() + ' columns loaded...');
   colorMode(HSB, 255);
-  noLoop();
+  // noLoop();
 }
 
  // Draw horizontal lines and the y axis
 function draw(){
   background(255);
-  // fill(255);
+
+  fill(0);
+  // loop to draw the grid lines and text
   for (var i = 0; i < 24; i++){
     noStroke();
     textAlign(RIGHT, CENTER);
@@ -47,9 +49,9 @@ function draw(){
    }
 
    //draw dots
-
+   // getting data out of the table...
    for(var i = 0; i < yearVsFar.getRowCount(); i++){
-    push();
+    // push();
      var BuiltFarColumn = yearVsFar.getNum(i, 'BuiltFAR');
      var ResidFarColumn = yearVsFar.getNum(i, 'ResidFAR');
      var CommFarColumn = yearVsFar.getNum(i,'CommFAR');
@@ -61,7 +63,6 @@ function draw(){
      var CommFarPosition = map(CommFarColumn,0,50,leftX,rightX)
      var FacilFarPosition = map(FacilFarColumn,0,50,leftX,rightX)
 
-}
 
       // If year is less than 1900 or numFAR is greater is 10
       if (YearOfData >= 1900 ) {
@@ -73,15 +74,40 @@ function draw(){
        // map each yearbuilt between bottomY and topY
        var YearOfData = map(YearOfData, 1900, 2014, bottomY, topY);
 
-  fill('#949494');
+
   if (mouseX < numResidFar){
-    console.log(mouseX)
+    // console.log(mouseX)
     fill('#CFB276');
   //ellipse(numResidFar, YearOfData, 8, 8);
   }
-  ellipse(numBuiltFar, YearOfData, 6, 6);
+  else {
+    fill('#949494');
+  }
+  ellipse(numResidFar, YearOfData, 6, 6);
   noStroke();
-  pop();
+  // pop();
+
+  fill('#949494');
+  if (mouseX < numCommFar){
+    // console.log(mouseX)
+    fill('#6B0803');
+  //ellipse(numResidFar, YearOfData, 8, 8);
+  }
+  ellipse(numCommFar, YearOfData, 6, 6);
+  noStroke();
+}
+
+fill('#949494');
+if (mouseX < numFacilFar){
+  // console.log(mouseX)
+  fill('#B95F21');
+//ellipse(numResidFar, YearOfData, 8, 8);
+}
+ellipse(numFacilFar, YearOfData, 6, 6);
+noStroke();
+
+  // pop();
+
 /*  if (mouseX < numBuiltFar){
   fill('#1C4C56');
   ellipse(numBuiltFar, YearOfData, 8, 8);
