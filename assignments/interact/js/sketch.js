@@ -95,7 +95,7 @@ function draw(){
   }
   ellipse(numCommFar, YearOfData, 6, 6);
   noStroke();
-}
+
 
 fill('#949494');
 if (mouseX < numFacilFar){
@@ -105,6 +105,17 @@ if (mouseX < numFacilFar){
 }
 ellipse(numFacilFar, YearOfData, 6, 6);
 noStroke();
+
+fill('#949494');
+if (mouseX < numBuiltFar){
+  // console.log(mouseX)
+  fill('#1C4C56');
+//ellipse(numResidFar, YearOfData, 8, 8);
+}
+ellipse(numFacilFar, YearOfData, 6, 6);
+noStroke();
+}
+
 
   // pop();
 
