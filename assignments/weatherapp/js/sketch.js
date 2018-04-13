@@ -44,7 +44,7 @@ function draw(){
   var drawTemp = round(temperature * (9/5) - 459.67);
   var drawTempMax = round(tempMax * (9/5) - 459.67);
   var drawTemMin = round(tempMin * (9/5) - 459.67);
-  var drawwind = wind;
+
 
 background (255);
 
